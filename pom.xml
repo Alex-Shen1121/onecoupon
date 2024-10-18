@@ -7,6 +7,16 @@
     <groupId>top.codingshen.onecoupon</groupId>
     <artifactId>onecoupon-all</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>onecoupon-distribution</module>
+        <module>onecoupon-engine</module>
+        <module>onecoupon-framework</module>
+        <module>onecoupon-gateway</module>
+        <module>one-coupon-merchant-admin</module>
+        <module>onecoupon-search</module>
+        <module>onecoupon-settlement</module>
+    </modules>
 
     <properties>
         <java.version>17</java.version>
@@ -23,6 +33,13 @@
         <redisson.version>3.21.3</redisson.version>
         <guava.version>30.0-jre</guava.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
